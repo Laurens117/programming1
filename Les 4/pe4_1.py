@@ -5,4 +5,14 @@ cijfers= [cijferICOR, cijferPROG, cijferCSN]
 som = sum(cijfers)
 gemiddelde = som / len(cijfers)
 beloning = som *30
-print('beloning ' + str(beloning) )
+print("Mijn cijfers "  + str(gemiddelde), "leveren een beloning van €" + str(beloning), 'op.')
+
+
+
+
+
+
+
+
+
+
