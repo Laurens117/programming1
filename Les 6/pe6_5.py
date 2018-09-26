@@ -1,7 +1,14 @@
 def kwadraten_som(grondgetallen):
-    return [i ** 2 for i in grondgetallen if i >=0]
+    som = 0
+    for grondgetal in grondgetallen:
+
+        if grondgetal >= 0:
+            kwadraat = grondgetal ** 2
+            som= som + kwadraat
+    return som
 
 grondgetallen = [4, 5, 3, -81]
+print(kwadraten_som(grondgetallen))
 
 
 
