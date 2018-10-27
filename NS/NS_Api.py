@@ -8,7 +8,7 @@ def station_vertrektijd(station):
 
     vertrekXML = xmltodict.parse(response.text)
     print('Dit zijn de vertrekkende treinen:')
-
+    print(vertrekXML)
     for vertrek in vertrekXML['ActueleVertrekTijden']['VertrekkendeTrein']:
         eindbestemming = vertrek['EindBestemming']
 
@@ -18,4 +18,4 @@ def station_vertrektijd(station):
         print('Om '+vertrektijd+' vertrekt een trein naar '+ eindbestemming)
 
 
-station_vertrektijd('Naarden-Bussum')
+
