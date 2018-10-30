@@ -7,7 +7,7 @@ def raise_frame(frame):                                         #Met deze functi
 
 root = Tk()
 root.title("NS app")
-root.geometry('1280x800')
+root.geometry('1280x720')
 root.configure(bg="#f7d53d")
 
 
@@ -19,7 +19,7 @@ for frame in(Home, PageOne):
 
 #Home(startscherm)
 
-Home.configure(bg="#f7d53d")                                    #achtergrond
+Home.configure(bg="#f7d53d")
 
 logo = PhotoImage(file='logo.gif')
 logo_label = Label(Home,image= logo, bg="#f7d53d")
@@ -36,11 +36,16 @@ Button(Home, text='Druk om verder te gaan',bg= "#1f0396", fg='white', command=la
 
 def Stations():                                             #Met deze functie kan je in de entry een station invoeren.
     station = stationEntry.get()                            #Met de vertrrektijden als output.
-    bestemming = station_vertrektijd(station)
+    tijdEnBestemmingen = station_vertrektijd(station)
 
-#Pagina_1
+    for tijdEnBestemming in tijdEnBestemmingen:
+        Label(PageOne, text=tijdEnBestemming, font="Helvetica, 28", fg="#1f0396", bg="#f7d53d").pack()
+
+
+#PageOne
 
 PageOne.configure(bg='#f7d53d')
+
 Label(PageOne, text='Actuele vertrektijden', font= "Helvetica, 28", fg= "#1f0396", bg= "#f7d53d").pack()
 
 invoer=Label(PageOne, text='Voer een station in:', bg='#f7d53d').pack()
@@ -48,11 +53,10 @@ invoer=Label(PageOne, text='Voer een station in:', bg='#f7d53d').pack()
 stationEntry = Entry(PageOne)
 stationEntry.pack()
 
-button = Button(PageOne, text="Druk hier", command=Stations)
+button = Button(PageOne, text="Druk hier",bg= "#1f0396", fg='white', command=Stations)
 button.pack()
 
-Button(PageOne, text='Terug', command=lambda:raise_frame(Home)).pack()
+Button(PageOne, text='Terug',bg= "#1f0396", fg='white', command=lambda:raise_frame(Home)).pack()
 
-raise_frame(Home)                                                            #Als het programma opent, toon het de startscherm.
+raise_frame(Home)                                           #Als het programma opent, toon het de startscherm.
 root.mainloop()
-
