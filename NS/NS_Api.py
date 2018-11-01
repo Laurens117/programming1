@@ -20,7 +20,3 @@ def station_vertrektijd(station):
         print('Om '+vertrektijd+' vertrekt een trein naar '+ eindbestemming)
 
     return tijdEnBestemmingen
-
-
-
-

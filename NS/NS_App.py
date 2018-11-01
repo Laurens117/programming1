@@ -2,12 +2,17 @@ from tkinter import *
 from NS_Api import *
 
 
-def raise_frame(frame):                                         #Met deze functie wissel je van pagina.
+def raise_frame(frame):
+    """ Met deze functie wissel je van pagina."""
+    for i in lijst:
+        i.destroy()
     frame.tkraise()
+
+help(raise_frame)
+
 
 root = Tk()
 root.title("NS app")
-root.geometry('1280x720')
 root.configure(bg="#f7d53d")
 
 
@@ -33,14 +38,18 @@ chipkaart_label.pack(padx=50, pady=10)
 
 Button(Home, text='Druk om verder te gaan',bg= "#1f0396", fg='white', command=lambda:raise_frame(PageOne)).pack()
 
-
-def Stations():                                             #Met deze functie kan je in de entry een station invoeren.
-    station = stationEntry.get()                            #Met de vertrrektijden als output.
+lijst=[]
+def Stations():
+    """Met deze functie kan je in de entry een station invoeren."""
+    station = stationEntry.get()
     tijdEnBestemmingen = station_vertrektijd(station)
 
     for tijdEnBestemming in tijdEnBestemmingen:
-        Label(PageOne, text=tijdEnBestemming, font="Helvetica, 28", fg="#1f0396", bg="#f7d53d").pack()
 
+        bestemming=Label(PageOne, text=tijdEnBestemming, font="Helvetica, 28", fg="#1f0396", bg="#f7d53d")
+        bestemming.pack()
+        lijst.append(bestemming)
+help(Stations)
 
 #PageOne
 
@@ -59,4 +68,9 @@ button.pack()
 Button(PageOne, text='Terug',bg= "#1f0396", fg='white', command=lambda:raise_frame(Home)).pack()
 
 raise_frame(Home)                                           #Als het programma opent, toon het de startscherm.
+
+root.overrideredirect(True)
+root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
+root.bind("<Escape>", lambda e: e.widget.quit())
+
 root.mainloop()
