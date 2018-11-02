@@ -30,42 +30,44 @@ logo = PhotoImage(file='logo.gif')
 logo_label = Label(Home,image= logo, bg="#f7d53d")
 logo_label.pack(padx=50, pady=0)
 
-Label(Home, text='Welkom bij NS', font= "Helvetica, 28", fg= "#1f0396", bg="#f7d53d").pack()
+Label(Home, text='Welkom bij NS', font= "Helvetica, 45", fg= "#1f0396", bg="#f7d53d").pack(padx=770, pady=0)
 
 chipkaart = PhotoImage(file='ns.gif')
 chipkaart_label = Label(Home,image= chipkaart, bg="#f7d53d")
 chipkaart_label.pack(padx=50, pady=10)
 
-Button(Home, text='Druk om verder te gaan',bg= "#1f0396", fg='white', command=lambda:raise_frame(PageOne)).pack()
+Button(Home, text='Druk om verder te gaan', font= "Helvetica, 30", bg= "#1f0396", fg='white', command=lambda:raise_frame(PageOne)).pack(padx=0,pady=50)
 
 lijst=[]
 def Stations():
     """Met deze functie kan je in de entry een station invoeren."""
     station = stationEntry.get()
+    lijst.clear()
     tijdEnBestemmingen = station_vertrektijd(station)
 
     for tijdEnBestemming in tijdEnBestemmingen:
-
-        bestemming=Label(PageOne, text=tijdEnBestemming, font="Helvetica, 28", fg="#1f0396", bg="#f7d53d")
+        bestemming=Label(PageOne, text='Om {} vertrekt er een trein naar {} op spoor {}'
+                                       ''.format(tijdEnBestemming[0],tijdEnBestemming[1], tijdEnBestemming[2]), font="Helvetica, 23", fg="#1f0396", bg="#f7d53d")
         bestemming.pack()
         lijst.append(bestemming)
+
 help(Stations)
 
 #PageOne
 
 PageOne.configure(bg='#f7d53d')
 
-Label(PageOne, text='Actuele vertrektijden', font= "Helvetica, 28", fg= "#1f0396", bg= "#f7d53d").pack()
+Label(PageOne, text='Actuele vertrektijden', font= "Helvetica, 40", fg= "#1f0396", bg= "#f7d53d").pack()
 
-invoer=Label(PageOne, text='Voer een station in:', bg='#f7d53d').pack()
+invoer=Label(PageOne, text='Voer een station in:',font= "Helvetica, 28", bg='#f7d53d').pack(padx=0,pady=5)
 
 stationEntry = Entry(PageOne)
 stationEntry.pack()
 
-button = Button(PageOne, text="Druk hier",bg= "#1f0396", fg='white', command=Stations)
+button = Button(PageOne, text="Druk hier",font= "Helvetica, 10", bg= "#1f0396", fg='white', command=Stations)
 button.pack()
 
-Button(PageOne, text='Terug',bg= "#1f0396", fg='white', command=lambda:raise_frame(Home)).pack()
+Button(PageOne, text='Terug',font= 'Helvetica, 10', bg= "#1f0396", fg='white', command=lambda:raise_frame(Home)).pack()
 
 raise_frame(Home)                                           #Als het programma opent, toon het de startscherm.
 

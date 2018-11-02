@@ -11,12 +11,19 @@ def station_vertrektijd(station):
     print(vertrekXML)
 
     tijdEnBestemmingen =[]
-    for vertrek in vertrekXML['ActueleVertrekTijden']['VertrekkendeTrein']:
-        eindbestemming = vertrek['EindBestemming']
+    x=int()
+    try:
+        for vertrek in vertrekXML['ActueleVertrekTijden']['VertrekkendeTrein']:
+            eindbestemming = str(vertrek['EindBestemming'])
 
-        vertrektijd = vertrek['VertrekTijd']      # 2016-09-27T18:36:00+0200
-        vertrektijd = vertrektijd[11:16]          # 18:36
-        tijdEnBestemmingen.append((vertrektijd, eindbestemming))
-        print('Om '+vertrektijd+' vertrekt een trein naar '+ eindbestemming)
-
+            vertrektijd = vertrek['VertrekTijd']      # 2016-09-27T18:36:00+0200
+            vertrektijd = vertrektijd[11:16]
+            spoor = vertrek['VertrekSpoor']['#text']# 18:36
+            tijdEnBestemmingen.append((vertrektijd, eindbestemming, spoor))
+            print('Om '+vertrektijd+' vertrekt een trein naar '+ eindbestemming+' op spoor '+spoor)
+            x=x+1
+            if x ==20:
+                break
+    except KeyError:
+        print('foutmelding')
     return tijdEnBestemmingen
