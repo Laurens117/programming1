@@ -14,7 +14,7 @@ De informatie staat niet georganiseerd in het beeld.
 Een probleem is wel, dat als je een station invoert die de NS Api niet herkent, 
 een error code weergeven wordt in het programma. Dit wordt niet op het scherm weergeven. 
 Er is een ‘terug’ knop, als je daar op drukt keer je terug naar het startscherm, het programma reset niet.
-Dus als je opnieuw een station invoert, wordt de informatie onder de oude informatie gezet. 
+Dus als je opnieuw een station invoert, wordt de informatie eronder gezet. 
 Nu moet je het programma afsluiten, om opnieuw de informatie van de vertrektijden op het scherm te krijgen.
 
 Dus bij het opnieuw invoeren van een andere station moet je de 'terug' knop drukken. 
