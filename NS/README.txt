@@ -1,7 +1,7 @@
 Zorg dat alle bestanden (NS_api, NS_APP en de gif bestanden), in dezelfe directory in Pycharm staan.
 Het programm wordt in 'full screen' modus weergeven. Met de 'esc' (escape) knop sluit je het programma.
 
-Zorg dat je de NS_App runt in Pycharm.
+Zorg dat je de NS_App.py runt in Pycharm.
 
 Je krijgt hier een startscherm (Home) in beeld. Vervolgens druk je op de ‘Druk om verder te gaan’ knop. 
 Nu krijg je de eerste pagina op het scherm (PageOne). 
