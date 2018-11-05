@@ -30,7 +30,7 @@ logo = PhotoImage(file='logo.gif')
 logo_label = Label(Home,image= logo, bg="#f7d53d")
 logo_label.pack(padx=50, pady=0)
 
-Label(Home, text='Welkom bij NS', font= "Helvetica, 45", fg= "#1f0396", bg="#f7d53d").pack(padx=770, pady=0)
+Label(Home, text='Welkom bij NS', font= "Helvetica, 55", fg= "#1f0396", bg="#f7d53d").pack(padx=770, pady=0)
 
 chipkaart = PhotoImage(file='ns.gif')
 chipkaart_label = Label(Home,image= chipkaart, bg="#f7d53d")
