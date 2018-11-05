@@ -9,7 +9,7 @@ Nu krijg je de eerste pagina op het scherm (PageOne).
 Op de eerste pagina heb je een invoer (entry) hier typ je een station in, waarvan je vertrektijden wil weten. 
 
 En vervolgens druk je op de ‘Druk hier’ knop. Nu krijg je een scherm met informatie van de vertrektijden, 
-hoe  laat de trein vertrekt, de spoor en eindbestemming.
+hoe laat de trein vertrekt, de spoor en eindbestemming.
 De informatie staat niet georganiseerd weergeven. 
 
 Een probleem is wel, dat als je een station invoert die de NS Api niet herkent, 
