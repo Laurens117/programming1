@@ -10,7 +10,7 @@ Op de eerste pagina heb je een invoer (entry) hier typ je een station in, waarva
 
 En vervolgens druk je op de ‘Druk hier’ knop. Nu krijg je een scherm met informatie van de vertrektijden, 
 hoe  laat de trein vertrekt, de spoor en eindbestemming.
-De informatie staat niet georganiseerd in het beeld. 
+De informatie staat niet georganiseerd weergeven. 
 
 Een probleem is wel, dat als je een station invoert die de NS Api niet herkent, 
 een error code weergeven wordt in het programma. Dit wordt niet op het scherm weergeven. 
