@@ -1,8 +1,12 @@
 Zorg dat alle bestanden (NS_api, NS_APP en de gif bestanden), in dezelfe directory in Pycharm staan.
 Het programm wordt in 'full screen' modus weergeven. Met de 'esc' (escape) knop sluit je het programma.
 
-Zorg dat de volgende modules geïnstalleerd zijn in Pycharm: requests, xmltodict en tkinter.  
-Als dit gedaan is, kan je de NS_App.py runnen in Pycharm en als het goed is start het programma nu.
+Zorg dat de volgende modules geïnstalleerd zijn in Pycharm: requests, xmltodict en tkinter. 
+Zie: https://www.jetbrains.com/help/idea/creating-and-managing-modules.html
+
+Als dit gedaan is, kan je de NS_App.py runnen in Pycharm. 
+
+Het programma gaat nu starten.
 
 Je krijgt hier een startscherm (Home) in beeld. Vervolgens druk je op de ‘Druk om verder te gaan’ knop. 
 Nu krijg je de eerste pagina op het scherm (PageOne). 
