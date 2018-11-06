@@ -1,15 +1,20 @@
 Zorg dat alle bestanden (NS_api, NS_APP en de gif bestanden), in dezelfe directory in Pycharm staan.
 Het programm wordt in 'full screen' modus weergeven. Met de 'esc' (escape) knop sluit je het programma.
 
-Zorg dat je de NS_App.py runt in Pycharm.
+Zorg dat de volgende modules geïnstalleerd zijn in Pycharm: requests, xmltodict en tkinter. 
+Zie: https://www.jetbrains.com/help/idea/creating-and-managing-modules.html
+
+Als dit gedaan is, kan je de NS_App.py runnen in Pycharm. 
+
+Het programma gaat nu starten.
 
 Je krijgt hier een startscherm (Home) in beeld. Vervolgens druk je op de ‘Druk om verder te gaan’ knop. 
 Nu krijg je de eerste pagina op het scherm (PageOne). 
 Op de eerste pagina heb je een invoer (entry) hier typ je een station in, waarvan je vertrektijden wil weten. 
 
 En vervolgens druk je op de ‘Druk hier’ knop. Nu krijg je een scherm met informatie van de vertrektijden, 
-hoe  laat de trein vertrekt, de spoor en eindbestemming.
-De informatie staat niet georganiseerd in het beeld. 
+hoe laat de trein vertrekt, de spoor en eindbestemming.
+De informatie staat niet georganiseerd weergeven. 
 
 Een probleem is wel, dat als je een station invoert die de NS Api niet herkent, 
 een error code weergeven wordt in het programma. Dit wordt niet op het scherm weergeven. 
