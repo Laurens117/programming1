@@ -8,18 +8,20 @@ Als dit gedaan is, kan je de NS_App.py runnen in Pycharm.
 
 Het programma gaat nu starten.
 
-Je krijgt hier een startscherm (Home) in beeld. Vervolgens druk je op de ‘Druk om verder te gaan’ knop. 
-Nu krijg je de eerste pagina op het scherm (PageOne). 
-Op de eerste pagina heb je een invoer (entry) hier typ je een station in, waarvan je vertrektijden wil weten. 
+Je krijgt hier een startscherm (Home) in beeld. 
 
+
+Als je op de ‘Actuele vertrektijden’ knop drukt, krijg je de eerste pagina op het scherm (PageOne) getoond. 
+Nu heb je een aantal opties: 
+
+Je hebt een invoer (entry) hier voer je een station in, waarvan je vertrektijden wil weten.
 En vervolgens druk je op de ‘Druk hier’ knop. Nu krijg je een scherm met informatie van de vertrektijden, 
-hoe laat de trein vertrekt, de spoor en eindbestemming.
-De informatie staat niet georganiseerd weergeven. 
+de spoor en eindbestemming.
 
-Een probleem is wel, dat als je een station invoert die de NS Api niet herkent, 
-een error code weergeven wordt in het programma. Dit wordt niet op het scherm weergeven. 
-Er is een ‘terug’ knop, als je daar op drukt keer je terug naar het startscherm, het programma reset niet.
-Dus als je opnieuw een station invoert, wordt de informatie eronder gezet. 
-Nu moet je het programma afsluiten, om opnieuw de informatie van de vertrektijden op het scherm te krijgen.
+Met de 'Utrecht' knop wordt de huidge vertrektijden van de station weergeven.
+De 'terug' knop is de laaste knop, hiermee ga je terug naar het vorige scherm (Home).
 
-Dus bij het opnieuw invoeren van een andere station moet je de 'terug' knop drukken. 
+
+
+
+
